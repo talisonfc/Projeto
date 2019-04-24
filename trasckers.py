@@ -21,10 +21,10 @@ class FaceTracker(object):
 		self.flags = flags
 
 		self._faces = []
-		self._faceClassifier = cv2.CascadeClassifier('C:\haarcascades\haarcascade_frontalface_alt.xml')
-		self._eyeClassifier = cv2.CascadeClassifier('C:\haarcascades\haarcascade_eye_tree_eyeglasses.xml')
-		self._noseClassifier = cv2.CascadeClassifier('C:\haarcascades\haarcascade_mcs_nose.xml')
-		self._mouthClassifier = cv2.CascadeClassifier('C:\haarcascades\haarcascade_mcs_mouth.xml')
+		self._faceClassifier = cv2.CascadeClassifier('./haarcascades/haarcascade_frontalface_alt.xml')
+		self._eyeClassifier = cv2.CascadeClassifier('./haarcascades/haarcascade_eye_tree_eyeglasses.xml')
+		self._noseClassifier = cv2.CascadeClassifier('./haarcascades/haarcascade_mcs_nose.xml')
+		self._mouthClassifier = cv2.CascadeClassifier('./haarcascades/haarcascade_mcs_mouth.xml')
 
 	@property
 	def faces(self):
