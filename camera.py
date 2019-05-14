@@ -1,4 +1,5 @@
 import cv2
+import numpy
 
 # classe para gerenciar o acesso a camera
 # iniciar camera
@@ -15,7 +16,7 @@ class Camera:
 
 	def capture(self):
 		val, frame = self.vc.read()
-		return frame
+		return numpy.fliplr(frame)
 
 	def show(self,frame):
 		cv2.imshow(self.window,frame)

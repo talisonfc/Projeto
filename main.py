@@ -5,7 +5,7 @@ import rects
 import numpy
 
 cam = Camera('Camera')
-#cam.screencast('video.avi',10,10)
+cam.screencast('video.avi',10,10)
 faceTracker = FaceTracker()
 
 while cv2.waitKey(1) != 27:
